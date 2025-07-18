@@ -10,8 +10,8 @@ public class Product {
 	public int getId() {
 		return id;
 	}
-	public void setId(int x) {
-		id = x;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -36,4 +36,5 @@ public class Product {
 	public String toString() {
 		return "\nProduct [id=" + id + ", name=" + name + ", company=" + company + ", price=" + price + "]";
 	}
+	
 }

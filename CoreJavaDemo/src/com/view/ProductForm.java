@@ -111,7 +111,7 @@ public class ProductForm extends JFrame {
 		contentPane.add(companyCmb);
 		
 		JButton addBtn = new JButton("ADD PRODUCT");
-		addBtn.setBounds(31, 223, 129, 23);
+		addBtn.setBounds(30, 241, 129, 23);
 		addBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -129,11 +129,11 @@ public class ProductForm extends JFrame {
 				ProductService service = new ProductServiceImpl();
 				service.addProduct(p); 
 				
-				JOptionPane.showMessageDialog(null, "Added successfully!");
+				JOptionPane.showMessageDialog(null, "Product info added successfully!");
 				
 				//clear input form
 				clearInputForm();
-														   						
+				displayData();										   						
 				
 			}
 
@@ -178,7 +178,7 @@ public class ProductForm extends JFrame {
 				
 			}
 		});
-		deleteBtn.setBounds(326, 384, 89, 23);
+		deleteBtn.setBounds(408, 384, 89, 23);
 		contentPane.add(deleteBtn);
 		
 		JButton btnNewButton_1 = new JButton("PRINT");
@@ -219,7 +219,7 @@ public class ProductForm extends JFrame {
 				
 			}
 		});
-		btnNewButton_2.setBounds(420, 384, 89, 23);
+		btnNewButton_2.setBounds(600, 384, 89, 23);
 		contentPane.add(btnNewButton_2);
 		
 		JLabel lblNewLabel_4 = new JLabel("Product Details");
@@ -278,7 +278,7 @@ public class ProductForm extends JFrame {
 				clearInputForm();
 			}
 		});
-		updateBtn.setBounds(34, 258, 89, 23);
+		updateBtn.setBounds(40, 270, 89, 23);
 		contentPane.add(updateBtn);
 		
 		JLabel lblSearchByProduct = new JLabel("Search by product company:");
